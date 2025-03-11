@@ -5,4 +5,7 @@ import preact from '@preact/preset-vite';
 export default defineConfig({
   root: './',  // This will make Vite look in the current directory (which is the root directory for index.html)
   plugins: [preact()],
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
 });
