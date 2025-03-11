@@ -3,4 +3,3 @@ import './index.css'
 import { App } from './app.jsx'
 
 render(<App />, document.getElementById('app'))
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
