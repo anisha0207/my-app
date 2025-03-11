@@ -1,11 +1,11 @@
+
 import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: './',  // This will make Vite look in the current directory (which is the root directory for index.html)
+  root: 'my-app',  // Set `my-app` as the root
   plugins: [preact()],
-  resolve: {
-    extensions: ['.js', '.jsx'],
+  build: {
+    outDir: '../dist',  // Output to `dist/` at the parent level
   },
 });
