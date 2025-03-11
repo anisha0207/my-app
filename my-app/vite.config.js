@@ -4,5 +4,5 @@ import preact from '@preact/preset-vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [preact()],
-  base: '/my-app/', // Add this line for GitHub Pages deployment
+  base: './my-app/', // Add this line for GitHub Pages deployment
 })
