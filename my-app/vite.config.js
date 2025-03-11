@@ -3,6 +3,6 @@ import preact from '@preact/preset-vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  root: 'my-app',  // This will make Vite look in the current directory (which is the root directory for index.html)
+  root: 'my-app2',  // This will make Vite look in the current directory (which is the root directory for index.html)
   plugins: [preact()],
 });
