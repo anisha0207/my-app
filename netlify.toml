@@ -1,3 +1,7 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && npm run deploy"
   publish = "dist"
+  functions = "functions"
+
+[context.production.environment]
+  NODE_VERSION = "22.14.0"
