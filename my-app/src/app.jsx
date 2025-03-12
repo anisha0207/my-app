@@ -30,6 +30,12 @@ export function App() {
               </ul>
             </nav>
 
+            {/* Main Message Displayed on Website Load */}
+            <section className="content-box">
+              <h2>Hi! My name is Anisha Dasgupta</h2>
+              <p>I'm a sophomore at Lehigh University majoring in Computer Science and Engineering. Explore my portfolio to learn more about my projects, experiences, and passions in technology.</p>
+            </section>
+
             {/* Routes for Content */}
             <Routes>
               <Route path="/about" element={<About />} />
