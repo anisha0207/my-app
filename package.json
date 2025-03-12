@@ -11,17 +11,16 @@
     "deploy": "netlify deploy --prod"
   }
 }
-
+{
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.3.0"
+    "react": "^18.2.0", // Use React 18 for stability
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1"
   },
-  {
   "devDependencies": {
-    "@vitejs/plugin-react": "5.0.0", // Use exact version
-    "vite": "6.2.0",
-    "gh-pages": "6.3.0"
+    "@vitejs/plugin-react": "^4.3.4", // Use compatible version for Vite 5
+    "vite": "^5.0.0", // Ensure compatibility with plugin-react
+    "gh-pages": "^6.3.0"
   }
 }
 
