@@ -1,6 +1,41 @@
 import './app.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+function MainContent() {
+  const location = useLocation();
+
+  return (
+    <div className="content-container">
+      {/* Navigation Tabs */}
+      <nav>
+        <ul>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/research">Research</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+      </nav>
+
+      {/* Welcome Message (only shown on home page) */}
+      {(location.pathname === '/' || location.pathname === '/home') && (
+        <section className="content-box">
+          <h2>Hi! My name is Anisha Dasgupta</h2>
+          <p>I'm a sophomore at Lehigh University majoring in Computer Science and Engineering. Explore my portfolio to learn more about my projects, experiences, and passions in technology.</p>
+        </section>
+      )}
+
+      {/* Routes for Content */}
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
+  );
+}
 
 export function App() {
   return (
@@ -30,11 +65,7 @@ export function App() {
               </ul>
             </nav>
 
-            {/* Main Message Displayed on Website Load */}
-            <section className="content-box">
-              <h2>Hi! My name is Anisha Dasgupta</h2>
-              <p>I'm a sophomore at Lehigh University majoring in Computer Science and Engineering. Explore my portfolio to learn more about my projects, experiences, and passions in technology.</p>
-            </section>
+            
 
             {/* Routes for Content */}
             <Routes>
