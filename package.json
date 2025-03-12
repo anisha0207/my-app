@@ -19,10 +19,11 @@
   },
   {
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.0.0-beta.8", // Use latest beta if v5 isn't released
-    "vite": "^6.2.0",
-    "gh-pages": "^6.3.0"
+    "@vitejs/plugin-react": "5.0.0", // Use exact version
+    "vite": "6.2.0",
+    "gh-pages": "6.3.0"
   }
 }
+
 }
 
