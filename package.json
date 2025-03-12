@@ -6,8 +6,7 @@
   "scripts": {
     "build": "vite build",
     "preview": "vite preview",
-    "dev": "vite",
-    "deploy": "npx netlify deploy --prod"
+    "dev": "vite"
   },
   "dependencies": {
     "react": "^18.2.0",
