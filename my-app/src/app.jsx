@@ -16,7 +16,7 @@ export function App() {
         {/* Image and Content Container */}
         <div className="image-and-content">
           {/* Profile Image */}
-          <img src="./src/assets/profile.jpg" className="portfolio-img" alt="Profile" />
+          <img src="./assets/profile.jpg" className="portfolio-img" alt="Profile" />
 
           {/* Navigation and Section Content */}
           <div className="content-container">
@@ -185,17 +185,17 @@ function Contact() {
       <h2>Contact Me</h2>
       {/* LinkedIn */}
       <a href="https://www.linkedin.com/in/anisha-dasgupta" target="_blank" rel="noopener noreferrer">
-        <img src="./src/assets/linkedin.jpg" alt="LinkedIn" style={{ width: '50px', marginRight: '10px' }} />
+        <img src="./assets/linkedin.jpg" alt="LinkedIn" style={{ width: '50px', marginRight: '10px' }} />
       </a>
 
       {/* GitHub */}
       <a href="https://github.com/anisha0207" target="_blank" rel="noopener noreferrer">
-        <img src="./src/assets/github.png" alt="GitHub" style={{ width: '50px', marginRight: '10px' }} />
+        <img src="./assets/github.png" alt="GitHub" style={{ width: '50px', marginRight: '10px' }} />
       </a>
 
       {/* Email */}
       <a href="mailto:anishadasgupta8@gmail.com">
-        <img src="./src/assets/gmail.jpg" alt="Email" style={{ width: '50px' }} />
+        <img src="./assets/gmail.jpg" alt="Email" style={{ width: '50px' }} />
       </a>
     </section>
   );
