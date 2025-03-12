@@ -1,99 +1,73 @@
 import './app.css';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 function MainContent() {
-  const location = useLocation();
+    const location = useLocation();
 
-  return (
-    <div className="content-container">
-      {/* Navigation Tabs */}
-      <nav>
-        <ul>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/research">Research</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
-
-      {/* Welcome Message (only shown on home page) */}
-      {(location.pathname === '/' || location.pathname === '/home') && (
-        <section className="content-box">
-          <h2>Hi! My name is Anisha Dasgupta</h2>
-          <p>I'm a sophomore at Lehigh University majoring in Computer Science and Engineering. Explore my portfolio to learn more about my projects, experiences, and passions in technology.</p>
-        </section>
-      )}
-
-      {/* Routes for Content */}
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/research" element={<Research />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </div>
-  );
-}
-
-export function App() {
-  return (
-    <Router>
-      <div>
-        {/* Header */}
-        <header>
-          <h1>
-            <Link to="/home">Innovating with Passion: One Project at a Time</Link>
-          </h1>
-        </header>
-
-        {/* Image and Content Container */}
-        <div className="image-and-content">
-          {/* Profile Image */}
-          <img src="/profile.jpg" className="portfolio-img" alt="Profile" />
-
-          {/* Navigation and Section Content */}
-          <div className="content-container">
+    return (
+        <div className="content-container">
             {/* Navigation Tabs */}
             <nav>
-              <ul>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/research">Research</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-              </ul>
+                <ul>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/research">Research</Link></li>
+                    <li><Link to="/blog">Blog</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                </ul>
             </nav>
 
-            
+            {/* Welcome Message (only shown on home page) */}
+            {(location.pathname === '/' || location.pathname === '/home') && (
+                <section className="content-box">
+                    <h2>Hi! My name is Anisha Dasgupta</h2>
+                    <p>I'm a sophomore at Lehigh University majoring in Computer Science and Engineering. Explore my portfolio to learn more about my projects, experiences, and passions in technology.</p>
+                </section>
+            )}
 
             {/* Routes for Content */}
             <Routes>
-              <Route path="/about" element={<About />} />
-              <Route path="/research" element={<Research />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/home" element={<Home />} /> {/* Default route */}
+                <Route path="/about" element={<About />} />
+                <Route path="/research" element={<Research />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
             </Routes>
-          </div>
         </div>
+    );
+}
 
-        {/* Footer */}
-        <footer>
-          <p>© 2025 Anisha Dasgupta</p>
-        </footer>
-      </div>
-    </Router>
-  );
+export function App() {
+    return (
+        <Router>
+            <div>
+                {/* Header */}
+                <header>
+                    <h1>
+                        <Link to="/home">Innovating with Passion: One Project at a Time</Link>
+                    </h1>
+                </header>
+
+                {/* Image and Content Container */}
+                <div className="image-and-content">
+                    {/* Profile Image */}
+                    <img src="/profile.jpg" className="portfolio-img" alt="Profile" />
+
+                    {/* Main Content */}
+                    <MainContent />
+                </div>
+
+                {/* Footer */}
+                <footer>
+                    <p>© 2025 Anisha Dasgupta</p>
+                </footer>
+            </div>
+        </Router>
+    );
 }
 
 function Home() {
-  return (
-    <section className="content-box">
-      <h2>Hi! My name is Anisha Dasgupta</h2>
-      <p>I'm a sophomore at Lehigh University majoring in Computer Science and Engineering. Explore my portfolio to learn more about my projects, experiences, and passions in technology.</p>
-    </section>
-  );
+    return null; // Home content is now handled in MainContent
 }
 
 function About() {
