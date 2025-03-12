@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "build": "vite build",
-  "preview": "vite preview",
-  "dev": "vite",
-  "deploy": "npx netlify deploy --prod"
-},
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev": "vite",
+    "deploy": "npx netlify deploy --prod"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,7 +17,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
     "vite": "^5.0.0",
-    "gh-pages": "^6.3.0"
-  "netlify-cli": "^17.1.0"
-}
+    "gh-pages": "^6.3.0",
+    "netlify-cli": "^17.1.0"
+  }
 }
