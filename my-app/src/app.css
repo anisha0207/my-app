@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  background-color: #72586a; /* Light blue background */
+  background-color: #72586a;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -19,12 +19,12 @@ body {
 
 /* Header Styling */
 header {
-  text-align: left; /* Align header text to the left */
-  padding: 10px; /* Add padding for better spacing */
+  text-align: left;
+  padding: 10px;
   color: #fcfdfd;
-  background-color: #72586a; /* Match body background color */
-  width: 100%; /* Make the header span the entire width */
-  padding-left: 20px; /* Align text with content */
+  background-color: #72586a;
+  width: 100%;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
@@ -34,17 +34,17 @@ header h1 {
 }
 
 header h1 a {
-  color: #fcfdfd; /* Set link color to white */
-  text-decoration: none; /* Remove underline */
+  color: #fcfdfd;
+  text-decoration: none;
   font-weight: bold;
 }
 
 header h1 a:hover {
-  color: #ddd; /* Lighter color on hover */
+  color: #ddd;
 }
 
 header h1 a:visited {
-  color: #fcfdfd; /* Ensure visited links stay white */
+  color: #fcfdfd;
 }
 
 /* Image and Content Container */
@@ -59,10 +59,10 @@ header h1 a:visited {
   width: 500px;
   height: auto;
   border-radius: 10px;
-  margin-top: 0px; /* Remove default top margin */
-  margin-left: 10px; /* Adjust left margin */
-  margin-right: 0; /* Remove right margin */
-  border: 5px solid white; /* Add a white border */
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 0;
+  border: 5px solid white;
 }
 
 /* Content Container (Tabs + Section) */
@@ -73,14 +73,14 @@ header h1 a:visited {
 /* Navigation Styling */
 nav {
   margin: 0;
-  text-align: left; /* Align navigation to the left */
+  text-align: left;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Arrange list items in a row */
+  display: flex;
 }
 
 nav ul li {
@@ -103,12 +103,12 @@ footer {
   padding: 1px 0;
   background-color:#35272f;
   color: white;
-  margin-top: 500px; /* Space between content and footer */
+  margin-top: 500px;
 }
 
 /* Section Styling for content */
 section {
-  margin-bottom: 30px; /* Space between sections */
+  margin-bottom: 30px;
 }
 
 /* Home Section */
@@ -121,7 +121,7 @@ section {
 section h2 {
   font-size: 2rem;
   color: #35272f;
-  text-align: left; /* Align header text to the left */
+  text-align: left;
   background-color: #fcfdfd;
   padding: 10px;
   border-radius: 5px;
@@ -140,35 +140,35 @@ section {
 
 /* Content Box Styling (e.g., About Me) */
 .content-box {
-  background-color: #fff; /* White background for content box */
-  padding: 20px; /* Add padding inside content box */
-  border-radius: 8px; /* Rounded corners for content box */
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
 
 .content-box p {
-  font-size: 16px; /* Adjust the font size as needed */
-  line-height: 1.6; /* Adjust the line height for readability */
-  color: #333;      /* Adjust the text color as needed */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
 }
 
 /* Styling for h3 elements within content-box */
 .content-box h3 {
-  font-size: 1.3rem;         /* Slightly smaller than h2 */
-  color: #555;              /* A darker gray color */
-  margin-top: 10px;         /* Space above the subheader */
-  margin-bottom: 15px;        /* Space below the subheader */
-  font-weight: normal;      /* Make it less bold */
-  font-style: italic;       /* Italicize the text */
+  font-size: 1.3rem;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-style: italic;
 }
 
 /* Styling for h4 elements within content-box */
 .content-box h4 {
-  font-size: 1.1rem;         /* Even smaller than h3 */
-  color: #777;              /* A lighter gray color */
-  margin-top: 5px;          /* Space above the sub-subheader */
-  margin-bottom: 10px;        /* Space below the sub-subheader */
-  font-weight: lighter;     /* Make it even less bold */
+  font-size: 1.1rem;
+  color: #777;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: lighter;
 }
 
 /* Blog Tabs Styling */
@@ -176,44 +176,115 @@ section {
   list-style-type: none;
   padding: 0;
   margin: 10px 0;
-  display: flex; /* Arrange tabs horizontally */
+  display: flex;
 }
 
 .blog-tab {
-  margin-right: 15px; /* Space between tabs */
+  margin-right: 15px;
   padding: 10px;
-  background-color: #72586a; /* Default background color */
-  color: #fff; /* Text color */
-  border-radius: 5px; /* Rounded corners */
+  background-color: #72586a;
+  color: #fff;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .blog-tab:hover {
-  background-color: #35272f; /* Darker blue on hover */
+  background-color: #35272f;
 }
 
 .blog-tab.active {
-  background-color: #fcfdfd; /* White background for active tab */
+  background-color: #fcfdfd;
 }
 
 /* Sub-tabs Styling */
 .sub-tabs {
   list-style-type: none;
 }
-/* Blog Tabs Styling */
-.blog-tabs,
-.sub-tabs {
-  list-style-type: none;
-}
-
-.blog-tab,
-.sub-tab {
-  display: inline-block;
-}
-.blog-tab:hover,
-.sub-tab:hover {
-}
 
 /* Go Back Button Styling */
 .go-back-button {
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce body padding on smaller screens */
+    }
+
+  .image-and-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .portfolio-img {
+    width: 90%; /* Make the image responsive */
+    max-width: 300px; /* Set a maximum width */
+    margin: 0 auto 20px; /* Center the image and add space below */
+  }
+
+  .content-container {
+    margin-left: 0; /* Remove left margin */
+    width: 100%; /* Take full width */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack the navigation links */
+  }
+
+  nav ul li {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add space between stacked links */
+  }
+
+  nav a {
+    display: block; /* Make each link a block element */
+    text-align: center; /* Center the text */
+  }
+
+  footer {
+    margin-top: 50px; /* Reduce the margin on smaller screens */
+  }
+
+  /* Section Styling for Content */
+  section {
+    margin-bottom: 20px; /* Reduce space between sections */
+    padding: 15px;      /* Adjust the padding */
+    max-width: 100%;      /* Take full width on smaller screens */
+  }
+
+  /* Adjusting Section Headers */
+  section h2 {
+    font-size: 1.75rem;   /* Smaller font size for headers */
+  }
+
+  /* Content Box Styling (e.g., About Me) */
+  .content-box {
+    padding: 15px;        /* Adjust padding */
+  }
+
+  .content-box p {
+    font-size: 1rem;      /* Adjust the font size as needed */
+  }
+
+  .blog-tabs {
+    flex-direction: column; /* Stack tabs vertically */
+  }
+
+  .blog-tab {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for smaller screens */
+  header h1 {
+    font-size: 1.5rem;   /* Make header smaller */
+  }
+
+  nav a {
+    font-size: 1rem;      /* Adjust font size of navigation */
+    padding: 8px 16px;     /* Adjust padding of navigation */
+  }
 }
