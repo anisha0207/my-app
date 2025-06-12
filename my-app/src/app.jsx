@@ -20,7 +20,7 @@ function MainContent() {
             {(location.pathname === '/' || location.pathname === '/home') && (
                 <section className="content-box">
                     <h2>Hi! My name is Anisha Dasgupta</h2>
-                    <p>I'm a sophomore at Lehigh University majoring in Computer Science and Engineering. Explore my portfolio to learn more about my projects, experiences, and passions in technology.</p>
+                    <p>I'm a junior at Lehigh University majoring in Computer Science and Engineering. Explore my portfolio to learn more about my projects, experiences, and passions in technology.</p>
                 </section>
             )}
 
