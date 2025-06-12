@@ -51,7 +51,7 @@ export function App() {
                 {/* Image and Content Container */}
                 <div className="image-and-content">
                     {/* Profile Image */}
-                    <img src="/profile.jpg" className="portfolio-img" alt="Profile" />
+                    <img src="/IMG_4962.jpg" className="portfolio-img" alt="Profile" />
 
                     {/* Main Content */}
                     <MainContent />
