@@ -89,7 +89,7 @@ function Research() {
   return (
     <section className="content-box">
       <h2>Research Projects</h2>
-      <p>University of Galway Research Summer Program 2025...</p> {/* Shortened for simplicity */}
+      <p>University of Galway Research Summer Program 2025... Come back to read about it in August 2025 :)</p> {/* Shortened for simplicity */}
     </section>
   );
 }
@@ -127,7 +127,7 @@ function Blog() {
   const travelContent = (
     <>
       {/* Full content for Trip to Ireland Reflections */}
-      <p>Reflections on traveling abroad and cultural experiences.</p>
+      <p>Reflections on traveling abroad and cultural experiences. Come back to read about it in August 2025 :)</p>
 
       {/* Add more paragraphs */}
     </>
