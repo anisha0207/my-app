@@ -159,7 +159,7 @@ function Blog() {
           {/* Initial Instructions */}
           {!selectedMainTab && (
             <div className="blog-content">
-              <p>Select a topic above to view content.</p>
+              <p>Learn more about me and my experience!</p>
             </div>
           )}
         </>
